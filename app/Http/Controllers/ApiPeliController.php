@@ -26,7 +26,7 @@ class ApiPeliController extends Controller
          //GET /api/peliculas?sortBy=año&sortOrder=desc
 
     }
-
+    
     public function obtenerPelicula($id)
     {
         $pelicula = Pelicula::with('categoria')->find($id);
